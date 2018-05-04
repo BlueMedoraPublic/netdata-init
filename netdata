@@ -28,7 +28,6 @@ fi
 
 case "$1" in
   start)
-    echo -n "Stopping vROps firewall service"
     echo -n "Starting $DAEMON"
     /sbin/startproc $DAEMON_BIN $DAEMON_ARGS
     rc_status -v
